@@ -16,8 +16,8 @@ namespace PP01
             list.Add(30);
             list.Add(70);
             list.Display();
-            list.RemoveLastNode();
-            list.Display();
+            Node newNode = list.Search(30);
+            Console.WriteLine(newNode.data);
 
         }
     }
