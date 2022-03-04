@@ -10,16 +10,13 @@ namespace PP01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("LinkedList");
-            LinkedList<int> list =new LinkedList<int>();
-            list.AddLast(56);
-            list.AddLast(30);
-            list.AddLast(70);
+            Node node = new Node(70);
+            LinkedList list = new LinkedList();
+            list.Add(70);
+            list.Add(30);
+            list.Add(56);
+            list.Display();
 
-            foreach (var ele in list)
-            {
-                Console.WriteLine(ele);
-            }
         }
     }
 }
