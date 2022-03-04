@@ -43,23 +43,23 @@ namespace PP01
                 temp = temp.next;
             }
         }
-        public Node Search(int value)
+        public int Search(int value)
         {
-            int count = 1;
-            while (this.head != null)
+            Node node = this.head;
+            int count = 0;
+            while (node != null)
             {
                 
-                if (this.head.data == value)
+                if (node.data == value)
                 {
-                    Console.WriteLine(count);
-                    return this.head;
+                    return count;
                     
                 }
                 
-                this.head = this.head.next;
+                node = node.next;
                 count++;
             }
-            return null;
+            return count;
 
         }
         public Node InsertaAtaParticularPosition(int position, int data)
