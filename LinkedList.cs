@@ -43,23 +43,17 @@ namespace PP01
                 temp = temp.next;
             }
         }
-        public Node RemoveLastNode()
+        public Node Search(int value)
         {
-            if (this.head == null)
+            while(this.head != null)
             {
-                return null;
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next; 
             }
-            if (head.next == null)
-            {
-                return null;
-            }
-            Node newNode = head;
-            while (newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            newNode.next = null;
-            return head;
+            return null;
 
         }
 
