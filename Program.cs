@@ -18,7 +18,10 @@ namespace PP01
             list.Display();
             Node newNode = list.Search(30);
             Console.WriteLine(newNode.data);
+            list.InsertaAtaParticularPosition(2, 40);
+            list.Display();
 
         }
+
     }
 }
