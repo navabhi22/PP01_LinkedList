@@ -10,12 +10,12 @@ namespace PP01
     {
         static void Main(string[] args)
         {
+            Node node = new Node(56);
             LinkedList list = new LinkedList();
             list.Add(56);
-            //list.Add(30);
+            list.Add(30);
             list.Add(70);
-            list.Display();
-            list.InsertaAtaParticularPosition(2, 30);
+            list.RemoveFirstNode();
             list.Display();
 
         }
